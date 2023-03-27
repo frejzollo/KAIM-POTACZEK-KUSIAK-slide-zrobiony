@@ -165,7 +165,7 @@ function dodajp(a)
 function dodajd(a)
 {
   dorosli = Number(dorosli) + a;
-    console.log(dorosli)
+  console.log(dorosli)
   if(dorosli < 0)
   {
     dorosli = 0;
@@ -173,7 +173,15 @@ function dodajd(a)
   }
   else
   {
+    if(dorosli < 4)
+    {
     document.getElementById('dorosli').innerHTML = dorosli;
+    }
+    else
+    {
+      dorosli = 4;
+      document.getElementById('dorosli').innerHTML = dorosli;
+    }
   }
 }
 function dodajc(g)
