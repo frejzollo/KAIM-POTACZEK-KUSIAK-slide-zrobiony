@@ -144,13 +144,43 @@ function dodajp(a)
 {
     pokoje = Number(pokoje) + a;
     console.log(pokoje)
+    if(pokoje < 0)
+    {
+      pokoje = 0;
+      document.getElementById('pokoje').innerHTML = pokoje;
+    }
+    else
+    {
+      if(pokoje > 9)
+      {
+        pokoje = 9;
+        document.getElementById('pokoje').innerHTML = pokoje;
+      }
+      else
+      {
     document.getElementById('pokoje').innerHTML = pokoje;
+    }
+  }
 }
 function dodajd(a)
 {
-    pokoje = Number(pokoje) + a;
-    console.log(pokoje)
-    document.getElementById('pokoje').innerHTML = pokoje;
+  dorosli = Number(dorosli) + a;
+    console.log(dorosli)
+  if(dorosli < 0)
+  {
+    dorosli = 0;
+    document.getElementById('dorosli').innerHTML = dorosli;
+  }
+  else
+  {
+    document.getElementById('dorosli').innerHTML = dorosli;
+  }
+}
+function dodajc(g)
+{
+  dzieci = Number(dzieci) + g;
+  console.log(dzieci)
+  document.getElementById('dzieci').innerHTML = dzieci;
 }
 
 
