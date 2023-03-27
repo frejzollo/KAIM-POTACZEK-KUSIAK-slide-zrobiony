@@ -1,0 +1,817 @@
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+#text2{
+    display: none;
+}
+ul
+{
+    list-style: none;
+    font-size: 13px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.flexblock
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-top
+{
+    height: 70px;
+    background: #555;
+}
+.box{
+    max-width: 800px;
+}
+.center
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.center1
+{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.center2
+{
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.menu
+{
+    max-width: 900px;
+    width: 100%;
+}
+
+.menu2
+{
+    max-width: 900px;
+    width: 100%;
+    display: none;
+    visibility: hidden;
+}
+
+.log1
+{
+    font-size: 10px;
+}
+
+div.line-top div.center
+{     
+    height:70px; 
+}
+
+.pasek
+{
+    border-bottom: 2px solid orange;
+}
+
+.but1
+{
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.kol
+{
+    color: #a9dca3;
+}
+
+.przycisk
+{
+    display: none;
+}
+
+.zlogo1
+{
+    display: none;
+}
+
+.logoN
+{
+    font-size: 10px;
+}
+
+@media(max-width:1000px)
+{
+    .logo 
+    {
+        margin: 0 auto;
+    }
+
+    .zlogo
+    {
+        display: none;
+    }
+
+    .log1 
+    {
+        display: none;
+    }
+}
+
+@media(max-width:800px)
+{
+    .menu 
+    {
+        display: none;
+    }
+
+    .przycisk 
+    {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    
+    ul.menu2
+    {
+        visibility: visible;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.menu2 li
+    {
+        padding: 16px;
+        margin: 0 auto;
+        margin-left: auto;
+        border-top: 2px solid #515151;
+        background-color: #333;
+    }
+
+    ul.menu2
+    {
+        width: 100%;
+    }
+
+    .zlogo1 
+    {
+        padding: 2px;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    ul li a
+    {
+        color: white;
+    }
+
+    ul li a:hover
+    {
+        text-decoration: underline;
+    }
+
+    .boxik
+    {
+        border-top: 1px solid #515151;
+        background-color: #4f4f4f;
+        padding: 10px;
+    }
+
+    .logN
+    {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+.back
+{
+   margin: 0 auto;
+}
+
+.pp
+{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+.slajdy
+{
+    width: 100%;
+    height: 565px;
+    background-color:#faf2e4;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.slajd1
+{
+    margin: 0 auto;
+    margin-left: 20px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.srodekZ
+{
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tekstslajd
+{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.slajdprzycisk
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 80px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.slajdprzycisk a 
+{
+    color: #006b00;
+}
+
+.slajdp1
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 89px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.slajdp3
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 77px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.slajdp4
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 71px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.slajdp5
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 105px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.slajdp6
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 115px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.przewin
+{
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tlos
+{
+    background-color:#faf2e4;
+    max-height: 600px;
+}
+
+.przewin a
+{
+    color: black;
+}
+
+.zielone 
+{
+    color: #006b00;
+}
+
+.slajdy1
+{
+    padding: 25px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 70px;
+  }
+  
+  .active, .dot:hover {
+    background-color: orange;
+  }
+
+  .slajdprzycisk:hover 
+  {
+      background-color: #006b00;
+      color: #fff;
+  }
+
+.slajdprzycisk:hover a 
+{
+    color: #fff;
+}
+
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 2s;
+ }
+  
+@keyframes fade 
+{
+    from {opacity: .3}
+    to {opacity: 1}
+}
+
+.basen
+{
+    width: 100%;
+    height: 500px;
+    background: url(img/basen.jpg);
+}
+
+.basennapis
+{
+    width: 520px;
+    height: 300px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.basenprzycisk
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 45px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 300px;
+    height: 50px;
+}
+
+.basenprzycisk:hover 
+  {
+      background-color: #006b00;
+      color: #fff;
+  }
+
+.basenprzycisk:hover a 
+{
+    color: #fff;
+}
+
+.button_box{
+    width:100%;
+    height:68px;
+    background-color:white;
+    padding: 8px;
+}
+.hotelmenu
+{
+    border: 1px solid #c5c5c5;
+    height:60px;
+    color:#333333;
+    padding:5px;
+    cursor: pointer;
+    width:100%;
+}
+
+
+button.hotelmenu
+{
+    outline:none;
+    background:none;
+    font-weight:700;
+    text-align:left;
+    font-size:13px;
+    letter-spacing:0.01em;
+    padding: 0 10px;
+}
+
+.dates
+{
+    width:200%;
+}
+
+button.hotelmenu span
+{
+    font-size:10px;
+    color: gray;
+    font-weight:400;
+}
+
+#searchtext
+{
+    height: 60px;
+    width: 240px;
+    outline: none;
+}
+
+#search
+{
+    text-align: center;
+    color:#fff;
+    background-color:#006b00;
+    border:none;
+}
+
+.button_box button:focus
+{
+    background-color:#54585a;
+    color: white;
+}
+
+button:focus span
+{
+    color: white;
+}
+
+.button_box div +div
+{
+    margin-left:10px;
+}
+
+.lewo
+{
+    flex: 55%;
+}
+
+.prawo
+{
+    flex: 45%;
+}
+
+#wszystko
+{
+    background:url('img/background.jpg') no-repeat center /cover;
+    height:550px;
+}
+
+#wszystko1_box
+{
+    height: 400px;
+}
+
+#wszystko1_text
+{
+    font-size:40px;
+    color: #333333;
+    background: white;
+    width: 30%;
+    height:290px;
+    font-weight: 600;
+    opacity: 0.83;
+    padding:20px;
+}
+
+.przycisktlo1
+{
+    border:2px solid #006b00;
+    padding: 20px;
+    color:#006b00 ;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.przycisktlo1:hover
+{
+    background:#006b00;
+    color: white;
+}
+
+.center3
+{
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.fhotels
+{
+    height: 100px;
+    background-color: #faf2e4;
+}
+
+.slider2
+{
+    height: 550px;
+    background-color: #faf2e4;
+    margin: 0 auto;
+    align-items: center;
+    padding: 60px;
+
+}
+
+.slider2zdj
+{
+    margin-left: 30px;
+}
+
+.lewoodsun
+{
+    margin-left: 150px;
+}
+
+.prawoodsun
+{
+    margin-right: 120px;
+}
+
+.info1, .info2, .info3
+{
+    width: 1000px;
+    height: 688px;
+    /* background: url(img/slider2.1.jpg); */
+    position: relative;
+}
+
+.biale1
+{
+    width: 330px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    margin-left: -30px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 22px;
+}
+
+.slider2przycisk
+{
+    margin: 0 auto;
+    align-items: center;
+    border:2px solid #006b00;
+    padding: 20px;
+    background-color:#006b00 ;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.slider2przycisk a
+{
+    color: white;
+}
+
+.przycisk1
+{
+    margin-top: 15px;
+}
+
+.kolejny
+{
+    background-color:white;
+    height: 500px;
+    
+}
+
+.uwu
+{
+    width: 50%;
+    background-color:white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uwu p
+{
+    font-size: large;
+    max-width: 500px;
+    text-align: center;
+    
+}
+
+.uwu a
+{
+    text-decoration: underline;
+    color: #006b00;
+}
+
+.niger
+{
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+    border: 2px solid #006b00;
+    background: none;
+    width: 150px;
+    height: 46px;
+    color: #006b00;
+    font-weight: bold;
+    
+}
+
+.niger:hover
+{
+    background-color: #006b00;
+    color: white;
+}
+
+
+.kropkidol
+{
+    height: 30px;
+    background-color:#faf2e4;
+}
+
+@media(max-width:600px)
+{
+    .biale1
+    {
+        position: relative;
+        align-items: center;
+        margin: 0 auto;
+        position: 0;
+        margin-bottom: 50px;
+    }
+
+    .info1
+    {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .slider2zdj
+    {
+        margin: 0;
+    }
+}
+
+.inp
+{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+}
+
+.rozwijany
+{
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    position: absolute;
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+.hotelm
+{
+    width: 100%;
+    position: relative;
+}
+
+.rozwijany
+{
+    margin-top: 20px;    
+}
+
+.przycisklewy button
+{
+   margin-left: 18px;
+    border: none;
+    outline: 2px solid green;
+    background-color: white;
+}
+
+.przyciskprawy button
+{
+    margin-right: 10px;
+    outline: 2px solid green;
+    border: none;
+    background-color: white;
+}
+
+
+.przycisklewy2 button
+{
+   margin-left: 33px;
+    border: none;
+    outline: 2px solid green;
+    background-color: white;
+}
+
+.przyciskprawy2 button
+{
+    margin-right: 10px;
+    outline: 2px solid green;
+    border: none;
+    background-color: white;
+}
+
+.iloscosob, .iloscdoroslych, .iloscdzieci
+{
+    padding: 10px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.iloscosob, .iloscdoroslych
+{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    border-bottom: 1px solid gray;
+}
+
+.malynapis
+{
+    font-size: 11px;
+    color: #006b00;
+}
+
+
+.malynapis:hover
+{
+    text-decoration: underline;
+}
+
+.rozwijany2
+{
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    position: absolute;
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+
+

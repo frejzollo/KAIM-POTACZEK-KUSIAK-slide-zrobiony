@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="jq.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+  integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="fontello-527f528b/css/fontello.css" type="text/css" />
+</head>
+<body>
+    <div class="line-top">
+        <div class="center flexblock">
+            <button class="but1" class="but1"id="left_btn"><i class="demo-icon icon-left-open kol"></i></button>
+           <div id="box">
+                <a href="" id="text"></a>
+           </div>
+            <button id="right_btn" class="but1"><i class="demo-icon icon-right-open-1 kol"></i></button>
+        </div>
+    </div>
+
+    <div class="pasek">
+    <div class="flexblock center1">
+        <a href="#" onClick="myFunction1()" class="przycisk" id="przycisk">  
+            <strong>&#9776;</strong> 
+        </a>
+        <img src="img/logo.PNG" height="80px" class="logo">
+        <ul class="flexblock menu czc" id="site-menu">
+            <li><a href="#">LOCATIONS</a></li>
+            <li><a href="#">DEAL</a></li>
+            <li><a href="#">MEETINGS</a></li>
+            <li><a href="#">FIND RESERVATION</a></li>
+            <li><a href="#"> (888) 862-2116</a></li>
+            <li></li>
+            <li><a href="#">LANGUAGES</a></li>
+        </ul>
+
+        <div>
+            <a href=""><img src="logo2.jpg" height="55px" class="zlogo"></a>
+            <div class="flexblock">
+                <a href="#" class="log1">SIGN IN</a>
+                <a href="#" class="log1">LOG IN</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <ul class="menu2" id="site-menu1" class="przycisk1">
+            <li><a href="#">LOCATIONS</a></li>
+            <li><a href="#">DEAL</a></li>
+            <li><a href="#">MEETINGS</a></li>
+            <li><a href="#">FIND RESERVATION</a></li>
+            <li><a href="#"> (888) 862-2116</a></li>
+            <li></li>
+            <li class="odstep"><a href="#">LANGUAGES</a></li>
+            <div class="boxik">
+            <a href=""><img src="img/logbez.png" height="70px" class="zlogo1"></a>
+            <a href="#" class="logN">SIGN IN</a>
+            <span>/</span>
+            <a href="#" class="logN">LOG IN</a>
+            </div>
+        </ul>
+    </div>
+    
+    <div id="wszystko">
+        <div id="wszystko1_box" class="center3 flexblock">
+            <div id="wszystko1_text">
+                <p>TRIPLE POINTS. ENDLESS ADVENTURES.</p>
+                <a href="#" class="przycisktlo1">REGISTER NOW</a>
+            </div>
+        </div>
+        <div class="center3">
+            <div class="button_box flexblock">
+                <div class="flexblock lewo">
+                    <div class="flexblock">
+                            <input type="search" id="searchtext" placeholder="Enter Destination">
+                    </div>
+
+                    <div class="dates flexblock">
+                        <button class="hotelmenu">
+                            <div>
+                                <span>CHECK IN</span> <input class="inp" type="date" id="inp">
+                            </div>
+                        </button>
+                        <button class="hotelmenu">
+
+                            <div>
+                                <span>CHECK OUT</span>  <input class="inp" type="date">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="flexblock prawo">
+                    <div class="hotelm dis">
+                    <button class="hotelmenu flexblock wysun"><div>1 ROOM, 1 GUEST</div><i class="demo-icon icon-right-open-1 kol"></i></button>
+                    <div class="rozwijany">
+                            <div class="iloscosob">
+                                <div class="pokoje flexblock">
+                                    <a><strong>Rooms</strong></a>
+                                    <div class="przycisklewy2">
+                                        <button onclick="dodajd(-1)"><strong>-</strong></button>
+                                    </div>
+                                    <div>
+                                    <div class="wypiszpokoje" id="pokoje"></div>  
+                                    </div>
+                                    <div class="przyciskprawy2">
+                                        <button onclick="dodajd(1)"><strong>+</strong></button>
+                                    </div>
+                                </div>
+                                <a href="" class="malynapis">Need more than 9 rooms?</a>
+                            </div>
+
+
+                            <div class="iloscdoroslych">
+                                <div class="dorosli flexblock">
+                                    <a><strong>Adults</strong></a>
+                                    <div class="przycisklewy2">
+                                        <button><strong>-</strong></button>
+                                    </div>
+                                    <div>
+                                    <div class="wypiszdoroslych" id="dorosli"></div>  
+                                    </div>
+                                    <div class="przyciskprawy2">
+                                        <button><strong>+</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="iloscdzieci">
+                                <div class="dorosli flexblock">
+                                    <a><strong>Children</strong></a>
+                                    <div class="przycisklewy">
+                                        <button><strong>-</strong></button>
+                                    </div>
+                                    <div>
+                                    <div class="wypiszdzieci" id="dzieci"></div>  
+                                    </div>
+                                    <div class="przyciskprawy">
+                                        <button><strong>+</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="hotelm dis" id="hotelm">
+                    <button class="hotelmenu flexblock wysun2">
+                        <div class="special_rates">SPECIAL RATES</div>
+                    </button>
+                    <div class="rozwijany2">
+
+                    </div>
+                    </div>
+                    <button class="hotelmenu space" id="search">SEARCH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tlos">
+    <div class="slajdy flexblock center2" id="zmiana">
+
+            <button id="left_btn1" onclick="plusSlides(-1)" class="przewin" id="left_btn flexblock slajdyb"><a class="demo-icon icon-left-open kol"></a></button>
+        <div class="slajdy1">
+            <div class="slajd1 fade">
+                <img src="img/slajd1.PNG" class="srodekZ" width="330px">
+                <p class="tekstslajd">Get inspired for your next journey on the open road with our top tips to prepare, essential packing lists, can’t-miss routes, and so much more.</p>
+                <a href="#" class="zielone">Terms & Conditions</a>
+                <button class="slajdprzycisk slajdp1"><a href="#">LEARN MORE</a></button>
+            </div>
+
+            <div class="slajd1 fade">
+                <img src="img/slajd2.PNG" class="srodekZ" width="330px">
+                <p class="tekstslajd">Get inspired for your next journey on the open road with our top tips to prepare, essential packing lists, can’t-miss routes, and so much more.</p>
+                <button class="slajdprzycisk slajdp1"><a href="#">DISCOVER THE GUIDE</a></button>
+            </div>
+
+            <div class="slajd1 fade">
+                <img src="img/slajd3.PNG" class="srodekZ" width="330px">
+                <p class="tekstslajd">When you book direct, you’ll get the lowest price at thousands of hotels worldwide. Not a Wyndham Rewards member? Join for free during booking.</p>
+                <a href="#" class="zielone">More info on booking direct</a>
+                <button  class="slajdprzycisk slajdp3"><a href="#">BOOK NOW</a></button>
+            </div>
+        </div>
+
+        <div class="slajdy1">
+            <div class="slajd1 fade">
+                <img src="img/slajd4.PNG" class="srodekZ" width="330px">
+                <p class="tekstslajd">When you book direct, you’ll get the lowest price at thousands of hotels worldwide. Not a Wyndham Rewards member? Join for free during booking.</p>
+                <a href="#" class="zielone">More info on booking direct</a>
+                <button class="slajdp4 slajdprzycisk"><a href="#">BOOK NOW</a></button>
+            </div>
+
+            <div class="slajd1 fade">
+                <img src="img/slajd5.PNG" class="srodekZ" width="330px">
+                <p class="tekstslajd">With ready-to-use workspaces, Work from Wyndham hotel packages allow you to remain focused all day long.</p>
+                <button class="slajdprzycisk slajdp5"><a href="#">LEARN MORE</a></button>
+            </div>
+
+            <div class="slajd1 fade">
+                <img src="img/slajd6.PNG" class="srodekZ" width="330px">
+                <p class="tekstslajd">Check out all of our offers and organizational discounts.</p>
+                <button class="slajdprzycisk slajdp6"><a href="#">LEARN MORE</a></button>
+            </div>
+        </div>
+            <button id="right_btn1" onclick="plusSlides(1)" class="przewin" id="right_btn flexblock slajdyb"><a class="demo-icon icon-right-open-1 kol"></a></button>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      
+    </div>
+    
+    <script>
+        function myFunction1() {
+            jQuery('#site-menu1');
+            $('ul.menu2').slideToggle(300);
+        }
+    </script>
+
+    <div class="basen flexblock">
+        <div class="basennapis">
+            <img src="img/basennapis.PNG">
+            <a>With amenities like daily breakfast, free WiFi, and flexible meeting spaces, Wyndham Garden is designed to provide a stress-free stay. Whether you’re traveling for business or leisure, we offer convenient hotels near key business, airport, and suburban locations.</a>
+            <div>
+            <button class="basenprzycisk"><a href="#">SUBMIT GROUP INQUIRY</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="infobasen">
+
+    </div>
+
+    <!-- <div class="fhotels">
+
+    </div> -->
+    <div class="kolejny flexblock">
+
+    <div class="uwu">
+        <img src="img/uwuu.png">
+        <p>When you book direct, you’ll get the lowest price at thousands of hotels worldwide. 
+        Not a Wyndham Rewards member? Join for free during booking.</p>
+
+        <a href="#">More Info on Booking Direct</a>
+
+            <button class="niger">BOOK NOW</button>
+
+    </div>
+
+    <div class="uwu">
+        <img src="img/uwuu2.png">
+        <p>When you stay at Wyndham hotels, you can earn points
+        toward free nights and redeem them at more than 8,900 Wyndham Rewards
+         hotels worldwide.</p>
+
+         <button class="niger">LEARN MORE</button>
+    </div>
+
+       
+    </div>
+
+
+    <div class="slider2 flexblock">
+            <button id="left_btn1" onclick="plusSlides1(-1)" class="przewin" id="left_btn flexblock slajdyb "><a class="demo-icon icon-left-open kol"></a></button>
+
+            <div class="info1 flexblock fade">
+                <img src="img/slider2.1.jpg" width="100%" class="slider2zdj">
+                <div class="biale1">
+                    <h1>Wyndham Garden Miami International Airport</h1>
+                    <a>Miami Springs, FL</a>
+                    <div class="przycisk1">
+                    <button class="slider2przycisk"><a href="#">SEE HOTEL</a></button>
+                    </div>
+                </div>
+            </div>
+                <div class="info1 flexblock fade">
+                    <img src="img/slider2.2.jpg" width="100%" class="slider2zdj">
+                    <div class="biale1">
+                        <h1>Wyndham Garden Lake Buena Vista Disney Spring</h1>
+                        <a>Lake Buena Vista, FL</a>
+                        <div class="przycisk1">
+                        <button class="slider2przycisk"><a href="#">SEE HOTEL</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info1 flexblock fade">
+                    <img src="img/slider2.3.jpg" width="100%" class="slider2zdj">
+                    <div class="biale1">
+                        <h1>Wyndham Garden Marietta North Gold Hotel</h1>
+                        <a>Marietta, GA</a>
+                        <div class="przycisk1">
+                        <button class="slider2przycisk"><a href="#">SEE HOTEL</a></button>
+                        </div>
+                    </div>
+                </div>
+    <button id="right_btn1" onclick="plusSlides1(1)" class="przewin" id="right_btn flexblock slajdyb"><a class="demo-icon icon-right-open-1 kol"></a></button>
+    </div>
+        <div class="kropkidol" style="text-align:center">
+            <span class="dot ods" onclick="currentSlide1(1)"></span>
+            <span class="dot ods" onclick="currentSlide1(2)"></span>
+            <span class="dot ods" onclick="currentSlide1(3)"></span>
+          </div>
+
+   
+
+    <script src="js.js"></script>
+</body>
+</html>
