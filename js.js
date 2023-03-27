@@ -209,3 +209,7 @@ function dodajc(g)
 
 
 
+
+
+
+
