@@ -140,17 +140,17 @@ let pokoje = document.getElementById('pokoje').innerHTML;
 let dorosli = document.getElementById('dorosli').innerHTML;
 let dzieci = document.getElementById('dzieci').innerHTML;
 
-function dodajd(a)
+function dodajp(a)
 {
-
     pokoje = Number(pokoje) + a;
     console.log(pokoje)
     document.getElementById('pokoje').innerHTML = pokoje;
-
-    document.getElementById('pokoje').innerHTML = 0;
-
-
-
+}
+function dodajd(a)
+{
+    pokoje = Number(pokoje) + a;
+    console.log(pokoje)
+    document.getElementById('pokoje').innerHTML = pokoje;
 }
 
 
