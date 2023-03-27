@@ -144,9 +144,9 @@ function dodajp(a)
 {
     pokoje = Number(pokoje) + a;
     console.log(pokoje)
-    if(pokoje < 0)
+    if(pokoje < 1)
     {
-      pokoje = 0;
+      pokoje = 1;
       document.getElementById('pokoje').innerHTML = pokoje;
     }
     else
@@ -166,9 +166,9 @@ function dodajd(a)
 {
   dorosli = Number(dorosli) + a;
   console.log(dorosli)
-  if(dorosli < 0)
+  if(dorosli < 1)
   {
-    dorosli = 0;
+    dorosli = 1;
     document.getElementById('dorosli').innerHTML = dorosli;
   }
   else
@@ -188,7 +188,23 @@ function dodajc(g)
 {
   dzieci = Number(dzieci) + g;
   console.log(dzieci)
-  document.getElementById('dzieci').innerHTML = dzieci;
+  if(dzieci < 0)
+  {
+    dzieci = 0;
+    document.getElementById('dzieci').innerHTML = dzieci;
+  }
+  else
+  {
+    if(dzieci < 8)
+    {
+    document.getElementById('dzieci').innerHTML = dzieci;
+    }
+    else
+    {
+      dzieci = 8;
+      document.getElementById('dzieci').innerHTML = dzieci;
+    }
+  }
 }
 
 
