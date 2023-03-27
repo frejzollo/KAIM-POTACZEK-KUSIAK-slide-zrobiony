@@ -11,6 +11,7 @@
   integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="fontello-527f528b/css/fontello.css" type="text/css" />
+  <link rel="stylesheet" href="fontello-66b93ae0/css/fontello.css" type="text/css"/>
 </head>
 <body>
     <div class="line-top">
@@ -76,9 +77,11 @@
         <div class="center3">
             <div class="button_box flexblock">
                 <div class="flexblock lewo">
-                    <div class="flexblock">
-                            <input type="search" id="searchtext" placeholder="Enter Destination">
-                    </div>
+                    <div class="flexblock lewo">
+                        <div class="inpucik flexblock">
+                             <a href="#"><img src="img/lupa.png" height="30px" class="lupa"></img></a>
+                             <input type="search" id="searchtext" placeholder="Enter Destination" >
+                        </div>
 
                     <div class="dates flexblock">
                         <button class="hotelmenu">
@@ -96,62 +99,115 @@
                 </div>
                 <div class="flexblock prawo">
                     <div class="hotelm dis">
-                    <button class="hotelmenu flexblock wysun"><div>1 ROOM, 1 GUEST</div><i class="demo-icon icon-right-open-1 kol"></i></button>
+                    <button class="hotelmenu flexblock wysun"><div>1 ROOM, 1 GUEST<i class="icon-down-dir kol1"></i></div><i class=""></i></button>
                     <div class="rozwijany">
-                            <div class="iloscosob">
-                                <div class="pokoje flexblock">
-                                    <a><strong>Rooms</strong></a>
-                                    <div class="przycisklewy2">
-                                        <button onclick="dodajp(-1)"><strong>-</strong></button>
-                                    </div>
-                                    <div>
-                                    <div class="wypiszpokoje" id="pokoje"></div>  
-                                    </div>
-                                    <div class="przyciskprawy2">
-                                        <button onclick="dodajp(1)"><strong>+</strong></button>
-                                    </div>
+                        <div class="iloscosob">
+                            <div class="pokoje flexblock">
+                                <a><strong>Rooms</strong></a>
+                                <div class="przycisklewy2">
+                                    <button onclick="dodajp(-1)"><strong>-</strong></button>
                                 </div>
-                                <a href="" class="malynapis">Need more than 9 rooms?</a>
-                            </div>
-
-
-                            <div class="iloscdoroslych">
-                                <div class="dorosli flexblock">
-                                    <a><strong>Adults</strong></a>
-                                    <div class="przycisklewy2">
-                                        <button onclick="dodajd(-1)"><strong>-</strong></button>
-                                    </div>
-                                    <div>
-                                    <div class="wypiszdoroslych" id="dorosli"></div>  
-                                    </div>
-                                    <div class="przyciskprawy2">
-                                        <button onclick="dodajd(1)"><strong>+</strong></button>
-                                    </div>
+                                <div>
+                                <div class="wypiszpokoje" id="pokoje"></div>  
+                                </div>
+                                <div class="przyciskprawy2">
+                                    <button onclick="dodajp(1)"><strong>+</strong></button>
                                 </div>
                             </div>
+                            <a href="" class="malynapis">Need more than 9 rooms?</a>
+                        </div>
 
 
-                            <div class="iloscdzieci">
-                                <div class="dorosli flexblock">
-                                    <a><strong>Children</strong></a>
-                                    <div class="przycisklewy">
-                                        <button onclick="dodajc(-1)"><strong>-</strong></button>
-                                    </div>
-                                    <div>
-                                    <div class="wypiszdzieci" id="dzieci"></div>  
-                                    </div>
-                                    <div class="przyciskprawy">
-                                        <button onclick="dodajc(1)"><strong>+</strong></button>
-                                    </div>
+                        <div class="iloscdoroslych">
+                            <div class="dorosli flexblock">
+                                <a><strong>Adults</strong></a>
+                                <div class="przycisklewy2">
+                                    <button onclick="dodajd(-1)"><strong>-</strong></button>
+                                </div>
+                                <div>
+                                <div class="wypiszdoroslych" id="dorosli"></div>  
+                                </div>
+                                <div class="przyciskprawy2">
+                                    <button onclick="dodajd(1)"><strong>+</strong></button>
                                 </div>
                             </div>
+                        </div>
+
+
+                        <div class="iloscdzieci">
+                            <div class="dorosli flexblock">
+                                <a><strong>Children</strong></a>
+                                <div class="przycisklewy">
+                                    <button onclick="dodajc(-1)"><strong>-</strong></button>
+                                </div>
+                                <div>
+                                <div class="wypiszdzieci" id="dzieci"></div>  
+                                </div>
+                                <div class="przyciskprawy">
+                                    <button onclick="dodajc(1)"><strong>+</strong></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     </div>
                     <div class="hotelm dis" id="hotelm">
                     <button class="hotelmenu flexblock wysun2">
-                        <div class="special_rates">SPECIAL RATES</div>
+                        <div class="special_rates">SPECIAL RATES<i class="icon-down-dir kol1"></i></div>
                     </button>
                     <div class="rozwijany2">
+                       <div class="rewards">
+                           <a class="rewards1">Wyndham Rewards Points</a>
+                       </div>
+                       <div class="rewards2">
+                           <input type="checkbox" class="czek"><a class="czek1">Use Wyndham Rewards points</a>
+                       </div>
+
+                       <div class="srates">
+                        <a class="srates1">Special rates</a>
+                            <div class="none flexblock">
+                            <div>
+                                <input type="radio"><a>NONE</a>
+                            </div>
+                            <div class="none1">
+                                <input type="radio"><a>Corporate code</a>
+                            </div>
+                            </div>
+
+                            <div class="none flexblock">
+                                <div>
+                                    <input type="radio"><a>AAA/CAA</a>
+                                </div>
+                                <div class="none2">
+                                    <input type="radio"><a>Group code</a>
+                                </div>
+                            </div>
+
+                            <div class="none">
+                                <input type="radio"><a>Government/Per Diem</a>
+                            </div>
+
+                            <div class="none">
+                                <input type="radio"><a>Military/Veteran</a>
+                            </div>
+
+                            <div class="none">
+                                <input type="radio"><a>Senior</a>
+                            </div>
+
+                            <div class="none">
+                                <input type="radio"><a>AARP</a>
+                            </div>
+                       </div>
+
+                       <div class="cancel flexblock">
+                        <div class="cancel1">
+                            <i class="demo-icon icon-left-open kol"></i>  <a href="">Cancel</a>
+                        </div>
+                            
+                        <div class="cancel2">
+                            <button>Done</button>
+                        </div>
+                       </div>
 
                     </div>
                     </div>
@@ -181,7 +237,7 @@
 
             <div class="slajd1 fade">
                 <img src="img/slajd3.PNG" class="srodekZ" width="330px">
-                <p class="tekstslajd">Whe n you book direct, you’ll get the lowest price at thousands of hotels worldwide. Not a Wyndham Rewards member? Join for free during booking.</p>
+                <p class="tekstslajd">When you book direct, you’ll get the lowest price at thousands of hotels worldwide. Not a Wyndham Rewards member? Join for free during booking.</p>
                 <a href="#" class="zielone">More info on booking direct</a>
                 <button  class="slajdprzycisk slajdp3"><a href="#">BOOK NOW</a></button>
             </div>

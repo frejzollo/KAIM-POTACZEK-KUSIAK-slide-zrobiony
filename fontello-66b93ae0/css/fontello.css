@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'do';
-  src: url('../font/do.eot?35354501');
-  src: url('../font/do.eot?35354501#iefix') format('embedded-opentype'),
-       url('../font/do.woff2?35354501') format('woff2'),
-       url('../font/do.woff?35354501') format('woff'),
-       url('../font/do.ttf?35354501') format('truetype'),
-       url('../font/do.svg?35354501#do') format('svg');
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?86085142');
+  src: url('../font/fontello.eot?86085142#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?86085142') format('woff2'),
+       url('../font/fontello.woff?86085142') format('woff'),
+       url('../font/fontello.ttf?86085142') format('truetype'),
+       url('../font/fontello.svg?86085142#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,13 +14,13 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'do';
-    src: url('../font/do.svg?35354501#do') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?86085142#fontello') format('svg');
   }
 }
 */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "do";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: never;
