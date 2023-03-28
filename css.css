@@ -994,3 +994,7 @@ select
 {
     margin-right: 10px;
 }
+.schowany
+{
+    display: none;
+}

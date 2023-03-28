@@ -186,6 +186,8 @@ function dodajd(a)
 }
 function dodajc(g)
 {
+  if(g == 1)
+  {
   dzieci = Number(dzieci) + g;
   console.log(dzieci)
   if(dzieci < 0)
@@ -205,7 +207,69 @@ function dodajc(g)
       document.getElementById('dzieci').innerHTML = dzieci;
     }
   }
+  odkrywanie()
 }
+else
+{
+  dzieci = Number(dzieci) + g;
+  console.log(dzieci)
+  if(dzieci < 0)
+  {
+    dzieci = 0;
+    document.getElementById('dzieci').innerHTML = dzieci;
+  }
+  else
+  {
+    if(dzieci < 8)
+    {
+    document.getElementById('dzieci').innerHTML = dzieci;
+    
+    }
+    else
+    {
+      dzieci = 8;
+      document.getElementById('dzieci').innerHTML = dzieci;
+    }
+  }
+  zakrywanie()
+}
+
+}
+
+let div = document.querySelectorAll('.wiek')
+
+function odkrywanie()
+{
+div[dzieci-1].style.display = 'block';
+let divrozwijany = document.querySelector('.rozwijany')
+let wysokosc = divrozwijany.clientHeight;
+if(divrozwijany.clientHeight == 490)
+{
+}
+else
+{
+wysokosc += 40
+console.log(wysokosc)
+divrozwijany.style.height = wysokosc+'px';
+}
+}
+function zakrywanie()
+{
+div[dzieci].style.display = 'none';
+let divrozwijany = document.querySelector('.rozwijany')
+let wysokosc = divrozwijany.clientHeight;
+if(divrozwijany.clientHeight == 170)
+{
+
+}
+else
+{
+wysokosc -= 40
+console.log(wysokosc)
+divrozwijany.style.height = wysokosc+'px';
+}
+}
+
 
 
 
